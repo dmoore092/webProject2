@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ------  Header Content ------ */
+h1{
+    font-size: 90px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#navlist li a#current{
+	/*background-color:red;*/
+    width: 6em;
+}
+
+#navlist{
+    /*width: 1074px;*/
+    width: 96vw;
+    padding: 3px 0px;
+    /*margin-left: 34px;*/
+    border-bottom: 1px solid #778;
+    font: bold 12px Verdana, sans-serif;
+}
+
+#navlist li{
+    list-style: none;
+    margin: 0;
+    display: inline;
+}
+
+#navlist li a{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #778;
+    border-bottom: none;
+    background: #DDE;
+    text-decoration: none;
+}
+
+#navlist li a:link { 
+    color: #448; 
+
+}
+#navlist li a:visited { color: #667; }
+
+#navlist li a:hover{
+    color: #000;
+    /*background: #AAE;*/
+    background: C4BDBA;
+    border-color: #227;
+}
+
+#navlist li a#current{
+    background: white;
+    border-bottom: 1px solid white;
+}
+/* ----   End of Header Content ---- */
+/* ----   Main Section Content ----- */
+body{
+    /*background-color: #c0c0c0;  /* --- change this color later ---- */
+    background-color: #9EADB4;
+}
+main{
+    padding: 15px;
+    width: 90vw;
+    margin: auto;
+    background-color: #E3E3E3;
+    height: 90%;
+}
+.pioneerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 15px;
+
+}
+.pioneers{
+    margin-top: 15px;
+    margin-left: 15px;
+    /*background-color: lightblue;*/
+    background-color: #7C8E8B;
+    font-weight: 400;
+    float: left;
+    left: 95px;
+    width: 500px;
+    height: 300px;
+}
+
+.pioneerpics{
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+    float: left;
+}
+.httprightpics{
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+    float: right;
+}
+h2, h3{
+    text-align: center;
+    padding-top: 5px;
+}
+h4{
+    margin: 5px 5px 5px 0px;
+}
+.pioneertext{
+    margin: 10px;
+
+}
+.glossary{
+    width: 710px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+dl{
+    margin-top: 75px;
+}
+dt{
+
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px;
+}
+dd{
+    position: relative;
+    left: 35px;
+    width: 85vw;
+}
+footer{
+    margin-right: 4vw;;
+    text-align: right;
+}
+.httpheaders{
+    text-align:left;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+.httpdivs{
+    height: 255px;
+}
+#webworks{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+#references{
+    padding: 35px;
+    width: 75vw;
+    margin: auto;
+    /*background-color: white;*/
+    /*background-color: #7C8E8B;*/
+    height: 70%;
+}
+.hangingindent {
+    margin: 10px;
+    padding-left: 22px;
+    text-indent: -22px ;
+    
+}
+/* ------ Mobile CSS ----- */
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: black;
+    }
+    main{
+        background-color: white;
+    }
+    h1, footer{
+        color: white;
+    }
+    p, h4, h3, h2{
+        font-size: 300%;
+    }
+    dt{
+        font-size: 300%;
+    }
+    dd{
+        font-size: 300%;
+    }
+    #webworks{
+        visibility: hidden;
+    }
+
+    #navlist{
+
+        padding: 3px 5px 10px;
+        margin: auto;
+        font-size: 200%;
+        border-bottom: none;
+    }
+
+    #navlist li{
+        list-style: none;
+        margin: 0;
+        display: inline;
+    }
+
+    #navlist li a{
+        border: none;
+        background-color: white;
+    }
+    #references{
+        width: auto;
+        word-wrap: break-word;
+    }
+    .pioneers{
+        margin-top: 15px;
+        background-color: white;
+        float: left;
+        left: 95px;
+        width: 750px;
+        height: auto;
+        /*height: 1900px;*/
+    }
+    .pioneersRight{
+        margin: 0 15px;
+        margin-top: 15px;
+        background-color: white;
+        float: left;
+        left: 95px;
+        width: 750px;
+        height: auto;
+        /*height: 1900px;*/
+    }
+    .httpdivs{
+        height: auto;
+    }
+
+}
+
